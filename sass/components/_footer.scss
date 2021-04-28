@@ -1,0 +1,155 @@
+.footer {
+  background-color: #2f303a;
+  color: $primaryWhiteColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address {
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.footer-content {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    max-height: 252px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+.footer__address-wrap {
+  text-align: center;
+}
+
+.footer-address__mail,
+.footer-address__tel {
+  color: $primaryTextColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.footer-socials {
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+
+.footer-socials__appeal {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: $primaryWhiteColor;
+}
+
+.footer-form-title {
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: block;
+}
+
+.footer-form {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 93px;
+  }
+}
+.footer-form__input {
+  @media screen and ($mobile) {
+    width: 90%;
+  }
+  @media screen and ($tab) {
+    width: 400px;
+  }
+
+  @media screen and ($desktop) {
+    width: 358px;
+  }
+
+  height: 50px;
+  display: inline-block;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(29, 16, 16, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  cursor: text;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  &:focus-within {
+    outline: none;
+    border-color: $accentColor;
+  }
+}
+
+.footer-form__subscribe-button {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  background-color: $accentColor;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: $primaryWhiteColor;
+  display: flex;
+  align-items: center;
+  padding: 10px 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  @media screen and ($desktop) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
+
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    content: '';
+    background-image: url(../images/send.svg);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $HoverColor;
+  }
+}
+
+@media screen and (min-width: 469px) and (max-width: 1199px) {
+  .footer__address-socials-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-form__subscribe-button {
+    margin-top: 20px;
+    margin-left: auto;
+  }
+}

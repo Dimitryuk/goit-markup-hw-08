@@ -1,0 +1,44 @@
+.clients-title {
+  margin-bottom: 50px;
+  text-align: center;
+  color: $titleTextColor;
+}
+.clients-grid__item {
+  --grid__item: 2;
+
+  @media screen and (min-width: 768px) {
+    --grid__item: 3;
+  }
+  @media screen and (min-width: 1200px) {
+    --grid__item: 6;
+  }
+}
+
+.clients__icon {
+  fill: $svgColor;
+  transition: fill 250ms $timingFunction;
+}
+.cliens-item__link {
+  border: 1px solid $primaryTextColor;
+  // width: px;
+  height: 90px;
+  width: 100%;
+
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // @media screen and (min-width: 1200px) {
+  //   width: 170px;
+  //   height: 90px;
+  // }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accentColor;
+  }
+  &:hover .clients__icon,
+  &:focus .clients__icon {
+    fill: $accentColor;
+  }
+}

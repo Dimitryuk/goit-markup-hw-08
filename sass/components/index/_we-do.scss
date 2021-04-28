@@ -1,0 +1,30 @@
+.we-do__title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: $titleTextColor;
+}
+.we-do__item {
+  --grid__item: 3;
+}
+.we-do__thumb {
+  position: relative;
+}
+.we-do__name {
+  position: absolute;
+  bottom: 0%;
+  width: 370px;
+  height: 70px;
+  display: inline-block;
+  background-color: rgba(47, 48, 48, 0.8);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding-top: 27px;
+  color: var(--primary-white-color);
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
