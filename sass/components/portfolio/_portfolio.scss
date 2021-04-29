@@ -36,14 +36,26 @@
     border-radius: 4px;
     transform: ease-in;
   }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 12px;
+  }
 }
 
 .portfolio__cards-item {
-  --grid__item: 3;
+  --grid__item: 1;
   &:hover,
   &:focus {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+  @media screen and (max-width: 767px) {
+    --grid__item: 1;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    --grid__item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --grid__item: 3;
   }
 }
 
@@ -97,4 +109,12 @@
 .portfolio__cards-list {
   margin: 0;
   padding: 0;
+}
+
+.portfolio__buttons-list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }

@@ -13,19 +13,19 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -343,6 +343,12 @@ header {
 
 .we-do__thumb {
   position: relative;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .we-do {
+    display: none;
+  }
 }
 
 .we-do__name {
@@ -834,13 +840,6 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 769px) {
-  .footer-form__subscribe-button {
-    margin-left: 12px;
-    margin-top: 0;
-  }
-}
-
 .footer-form__subscribe-button::after {
   content: '';
   background-image: url(../images/send.svg);
@@ -854,14 +853,28 @@ header {
   background-color: #188ce8;
 }
 
-@media screen and (min-width: 469px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__address-socials-wrap {
     display: flex;
     justify-content: space-between;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address-socials-wrap {
+    display: flex;
+  }
   .footer-form__subscribe-button {
-    margin-top: 20px;
-    margin-left: auto;
+    margin-top: 0;
+    margin-left: 12px;
+  }
+  .footer-form-title {
+    text-align: left;
+    margin-left: 95px;
+  }
+  .footer {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -903,12 +916,36 @@ header {
   transform: ease-in;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio__button {
+    margin-bottom: 12px;
+  }
+}
+
 .portfolio__cards-item {
-  --grid__item: 3;
+  --grid__item: 1;
 }
 
 .portfolio__cards-item:hover, .portfolio__cards-item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__cards-item {
+    --grid__item: 1;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__cards-item {
+    --grid__item: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__cards-item {
+    --grid__item: 3;
+  }
 }
 
 .portfolio__card-overlay-text {
@@ -961,5 +998,13 @@ header {
 .portfolio__cards-list {
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__buttons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 /*# sourceMappingURL=main.css.map */

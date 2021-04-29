@@ -9,6 +9,12 @@
 .we-do__thumb {
   position: relative;
 }
+
+.we-do {
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
+}
 .we-do__name {
   position: absolute;
   bottom: 0%;
