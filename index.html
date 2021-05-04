@@ -14,7 +14,7 @@
 
 </head>
 <body>
-   <header>
+   <!-- <header>
        <div class="container header">
            <div class="header-logo">
                 <a href="./index.html" class="logo">Web<span class="logo-second-part">Studio</span> </a>
@@ -52,7 +52,7 @@
         
     </div>
     </div>
-   </header>
+   </header> -->
     <main>
         <-- Hero -->
 
@@ -119,19 +119,29 @@
             <ul class="list we-do grid ">
                 <li class="grid__item we-do__item">
                     <div class="we-do__thumb">
+                        <picture>
+                            <source 
+                            srcset="./images/we-do/box1-min.jpg 1x ,./images/we-do/box1@2x-min.jpg 2x">
                          <img src="./images/box_1.jpg" width="370" alt="Компьютер">
-                        <p class="we-do__name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                        </picture>
+                         <p class="we-do__name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                         </div>
                     </li>
                 <li class="grid__item we-do__item">
                     <div class="we-do__thumb">
-                        <img src="./images/box_2.jpg" width="370" alt="Планшет">
+                        <picture>
+                            <source srcset="./images/we-do/box2-min.jpg 1x ,./images/we-do/box2@2x-min.jpg 2x">
+                            <img src="./images/box_2.jpg" width="370" alt="Компьютер">
+                        </picture>
                         <p class="we-do__name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                     </div>
                 </li>
                 <li class="grid__item we-do__item">
                     <div class="we-do__thumb">
-                        <img src="./images/box_3.jpg" width="370" alt="МОБИЛЬНИК">
+                        <picture>
+                            <source srcset="./images/we-do/box3-min.jpg 1x ,./images/we-do/box3@2x-min.jpg 2x">
+                            <img src="./images/box_3.jpg" width="370" alt="Компьютер">
+                        </picture>
                         <p class="we-do__name">ДИЗАЙНЕРСКИЕ решения</p>
                     </div>
                 </li>
@@ -145,8 +155,17 @@
             <h2 class="title team-title-head">Наша команда</h2>
             <ul class="list grid">
                 <li class="grid__item team-grid__item">
-                
-                    <img src="./images/team_1.jpg" width="270" alt="Член команды 1">
+                    <picture>
+                     <source srcset="./images/team/desk_teammate1-min.jpg 1x, ./images/team/desk_teammate1@x2-min.jpg 2x"
+                       media="(min-width: 1200px)"
+                />
+                <source srcset="./images/team/tab_teammate1-min.jpg 1x, ./images/team/tab_teammate1@2x-min.jpg 2x"
+                    media="(min-width: 768px)" />
+                <source srcset="./images/team/mob_teammate1-min.jpg 1x, ./images/team/mob_teammate1@2x-min.jpg 2x"
+                    media="(max-width: 767px)" />
+                 
+                    <img src="./images/team_1.jpg" width="450" alt="Член команды 1">
+                    </picture>
                    <div class="teammate">
                         <h3 class="teammate__name">Игорь Демьяненко</h3>
                         <p class="teammate__position">Product Designer</p>
@@ -180,8 +199,17 @@
                 
                 </li>
                 <li class="grid__item team-grid__item">
+                    <picture>
+                        <source srcset="./images/team/desk_teammate2-min.jpg 1x, ./images/team/desk_teammate2@x2-min.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/team/tab_teammate2-min.jpg 1x, ./images/team/tab_teammate2@2x-min.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/team/mob_teammate2-min.jpg 1x, ./images/team/mob_teammate2@2x-min.jpg 2x"
+                            media="(max-width: 767px)" />
+                            <img src="./images/team_2.jpg" width="450" alt="Член команды 2">
+                    </picture>
                 
-                    <img src="./images/team_2.jpg" width="270" alt="Член команды 2">
+                   
                    <div class="teammate">
                         <h3 class="teammate__name">Ольга Репина </h3>
                         <p class="teammate__position">Frontend Developer</p>
@@ -214,8 +242,18 @@
                 
                 </li>
                 <li class="grid__item team-grid__item">
+                    <picture>
+                        <source srcset="./images/team/desk_teammate3-min.jpg 1x, ./images/team/desk_teammate3@x2-min.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/team/tab_teammate3-min.jpg 1x, ./images/team/tab_teammate3@2x-min.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/team/mob_teammate3-min.jpg 1x, ./images/team/mob_teammate3@2x-min.jpg 2x"
+                            media="(max-width: 767px)" />
+                    
+                    <img src="./images/team_3.jpg" width="450" alt="Член команды 3">
+                    </picture>
                 
-                    <img src="./images/team_3.jpg" width="270" alt="Член команды 3">
+                   
                    <div class="teammate">
                     <h3 class="teammate__name">Николай Тарасов</h3>
                     <p class="teammate__position">Marketing</p>
@@ -248,8 +286,17 @@
                 
                 </li>
                 <li class="grid__item team-grid__item">
+                <picture>
+                    <source srcset="./images/team/desk_teammate4-min.jpg 1x, ./images/team/desk_teammate4@x2-min.jpg 2x"
+                        media="(min-width: 1200px)" />
+                    <source srcset="./images/team/tab_teammate4-min.jpg 1x, ./images/team/tab_teammate4@2x-min.jpg 2x"
+                        media="(min-width: 768px)" />
+                    <source srcset="./images/team/mob_teammate4-min.jpg 1x, ./images/team/mob_teammate4@2x-min.jpg 2x"
+                        media="(max-width: 767px)" />
                 
-                    <img src="./images/team_4.jpg" width="270" alt="Член команды 4">
+                    <img src="./images/team_4.jpg" width="450" alt="Член команды 4">
+                </picture>
+                    
                    <div class="teammate">
                     <h3 class="teammate__name">Михаил Ермаков</h3>
                     <p class="teammate__position">UI Designer</p>
