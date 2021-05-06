@@ -34,6 +34,7 @@
 
 .mobile-menu {
   position: fixed;
+  z-index: 15;
   top: -200%;
   left: 0;
   width: 100%;
