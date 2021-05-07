@@ -1097,6 +1097,10 @@ header {
   transform: translateY(0);
 }
 
+.portfolio__card-link:focus .portfolio__card-overlay {
+  transform: translateY(0);
+}
+
 .portfolio__product-name {
   font-weight: 700;
   font-size: 18px;

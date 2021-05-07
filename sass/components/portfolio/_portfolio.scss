@@ -83,6 +83,9 @@
   &:hover .portfolio__card-overlay {
     transform: translateY(0);
   }
+  &:focus .portfolio__card-overlay {
+    transform: translateY(0);
+  }
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -109,9 +112,7 @@
   border-bottom: 1px solid #ececec;
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   height: 134px;
-  // }
+
   flex-grow: 1;
 }
 .portfolio__cards-list {
