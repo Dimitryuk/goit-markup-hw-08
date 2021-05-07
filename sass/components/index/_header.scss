@@ -33,6 +33,9 @@ header {
 }
 .header-contacts__mail:not(:last-child) {
   margin-right: 30px;
+  @media screen and (max-width: 1199.98px) {
+    margin-right: 0px;
+  }
 }
 
 .site-nav__link {
