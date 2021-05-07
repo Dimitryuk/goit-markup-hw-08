@@ -1167,6 +1167,9 @@ header {
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   z-index: 15;
   top: -200%;
@@ -1228,7 +1231,6 @@ header {
 .mobile-menu__tel,
 .mobile-menu__mail {
   display: block;
-  margin-bottom: 35px;
 }
 
 .mobile-menu__tel {
@@ -1237,7 +1239,7 @@ header {
   line-height: 40px;
   color: #2196f3;
   letter-spacing: 0.02em;
-  margin-top: 100px;
+  margin-bottom: 35px;
 }
 
 .mobile-menu__mail {
